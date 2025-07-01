@@ -6,7 +6,7 @@ function Disease({symptomsSubmit}) {
     const[predictionResult,setPredictionResult]=useState([]);
     const[loading,setLoading]=useState(false);
     const[message,setMessage]=useState('');
-    const url="http://localhost:4000"
+    const url="https://mediwise-erhi.onrender.com"
     const fetchData=async()=>{
     if(symptomsSubmit.length==0){
       console.log("symptoms not Entered");
