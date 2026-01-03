@@ -4,7 +4,8 @@ const fetchFromAPI=async(req,res)=>{
         const {symptoms}=req.body;
         const response=await axios.post('https://disease-prediction-model-backend.onrender.com/api/predict',{
             symptoms
-        });
+        },{timeout:60000});
+
         if(response.data.message){
         res.json({status:true,message:response.data.message});
         }
