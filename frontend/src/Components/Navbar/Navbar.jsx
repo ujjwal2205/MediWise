@@ -7,7 +7,7 @@
         try {
           const res1 = await axios.get('https://disease-prediction-model-hekw.onrender.com');
           const res2=await axios.get('https://disease-prediction-model-backend.onrender.com');
-          const res3=await axios.get('http://localhost:4000');
+          const res3=await axios.get('https://mediwise-erhi.onrender.com');
           console.log("Server awake:", res1.data);
           console.log("Server awake:", res2.data);
           console.log("Server awake:", res3.data);
