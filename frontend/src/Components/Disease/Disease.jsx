@@ -14,6 +14,7 @@ function Disease({symptomsSubmit}) {
     }
     setLoading(true);
     try {
+      console.log(symptomsSubmit);
       const res=await axios.post(`${url}/api/predict`,{
         symptoms:symptomsSubmit
       });
